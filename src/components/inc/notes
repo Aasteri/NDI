@@ -1,0 +1,65 @@
+/* bootstrap 5.2 */
+pt-0 /* padding-top */
+pb-0 /* padding-bottom */
+ps-0 /* padding-left */
+pe-0 /* padding-right */
+px-0 /* padding-left+right */
+py-0 /* padding-top+bottom */
+
+/* Where size is one of:
+0 - setting it to 0
+1 - $spacer * .25
+2 - $spacer * .5
+3 - $spacer
+4 - $spacer * 1.5
+5 - $spacer * 3 */
+
+
+/* bootstrap 5.2 */
+mt-0 /* margin-top */
+mb-0 /* margin-bottom */
+ms-0 /* margin-left */
+me-0 /* margin-right */
+mx-0 /* margin-left+right */
+my-0 /* margin-top+bottom */
+
+/* Where size is one of:
+0 - setting it to 0
+1 - $spacer * .25
+2 - $spacer * .5
+3 - $spacer
+4 - $spacer * 1.5
+5 - $spacer * 3 */
+
+
+
+
+<!-- On rows -->
+<tr class="bg-primary">...</tr>
+<tr class="bg-success">...</tr>
+<tr class="bg-warning">...</tr>
+<tr class="bg-danger">...</tr>
+<tr class="bg-info">...</tr>
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+  <td class="bg-primary">...</td>
+  <td class="bg-success">...</td>
+  <td class="bg-warning">...</td>
+  <td class="bg-danger">...</td>
+  <td class="bg-info">...</td>
+</tr>
+
+
+
+<div class="bg-primary">bg-primary</div>
+<div class="bg-secondary">bg-secondary</div>
+<div class="bg-success">bg-success</div>
+<div class="bg-danger">bg-danger</div>
+<div class="bg-warning">bg-warning</div>
+<div class="bg-info">bg-info</div>
+<div class="bg-light">bg-light</div>
+<div class="bg-dark">bg-dark</div>
+<div class="bg-body">bg-body</div>
+<div class="bg-white">bg-white</div>
+<div class="bg-transparent">bg-transparent</div>
