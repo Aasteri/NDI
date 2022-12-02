@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 import { Line } from 'react-chartjs-2';
 import { Bar } from 'react-chartjs-2';
 import { Pie } from 'react-chartjs-2';
-import { Radar } from 'react-chartjs-2';
-import { Polar } from 'react-chartjs-2';
 
 // import { CDBContainer } from 'cdbreact';
 import Service4 from '../images/services4.jpg';
@@ -13,7 +11,7 @@ import Service2 from '../images/services2.jpg';
 import Service5 from '../images/services5.jpg';
 
 
-function Aboutus() {
+function Infographs() {
     const [data] = useState({
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
         datasets: [
@@ -37,7 +35,7 @@ function Aboutus() {
         datasets: [
             {
                 label: 'Active',
-                backgroundColor: '#003488',
+                backgroundColor: 'rgba(194, 116, 161, 0.5)',
                 borderColor: 'rgb(194, 116, 161)',
                 data: [65, 59, 90, 81, 56, 55, 40],
                 borderRadius: 20,
@@ -64,24 +62,6 @@ function Aboutus() {
             },
         ],
     });
-
-    const [radar] = useState({
-        labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
-        datasets: [
-          {
-            label: 'My First dataset',
-            backgroundColor: 'rgba(194, 116, 161, 0.5)',
-            borderColor: 'rgb(194, 116, 161)',
-            data: [65, 59, 90, 81, 56, 55, 40],
-          },
-          {
-            label: 'My Second dataset',
-            backgroundColor: 'rgba(71, 225, 167, 0.5)',
-            borderColor: 'rgb(71, 225, 167)',
-            data: [28, 48, 40, 19, 96, 27, 100],
-          },
-        ],
-      });
 
     return (
         <div>
@@ -117,7 +97,7 @@ function Aboutus() {
                             <div className="underline mx-auto"></div>
                         </div>
                         <div className="col-md-12 ">
-                            <div className='card shadow'>
+                            <div className=''>
                                 <div className="">
                                     <h3 className="activities mt-5">Voters Activities</h3>
                                     <Line data={data} options={{ responsive: true }} />
@@ -131,36 +111,24 @@ function Aboutus() {
                             </p>
                         </div>
 
-                        <div className="my-5 col-md-6">
-                            <div className='card shadow'>
+                        <div className="col-md-6">
+                            <div className=''>
                                 <h3 className="activities mt-5">Activities</h3>
                                 <Bar data={activities} options={{ responsive: true }} />
                             </div>
                         </div>
-                        <div className="my-5 col-md-6">
-                            <div className='card shadow'>
+                        <div className="col-md-6">
+                            <div className=''>
                                 <h3 className="activities mt-5">Activities</h3>
                                 <Pie data={pieset} options={{ responsive: true }} />
                             </div>
                         </div>
-                        <div className="my-5 col-md-12">
-                            <div className='card shadow'>
-                                <h3 className="activities mt-5">Activities</h3>
-                                <Radar data={radar} options={{ responsive: true }} />
-                            </div>
-                        </div>
-                        <div className="my-5 col-md-12">
-                            <div className='card shadow'>
-                                <h3 className="activities mt-5">Activities</h3>
-                                <Polar data={radar} options={{ responsive: true }} />
-                            </div>
-                        </div>                    
                     </div>
                 </div>
             </section >
         </div >
     )
 }
-export default Aboutus;
+export default Infographs;
 
 

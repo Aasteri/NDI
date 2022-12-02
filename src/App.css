@@ -314,7 +314,7 @@ screen and (min-width: 40em) {
   max-width: 100%;
   height: auto;
   -ms-interpolation-mode: bicubic;
-  margin-top: 2vw;
+  /* margin-top: 2vw; */
 }
 
 .tool-home-content-text {
@@ -376,4 +376,89 @@ screen and (min-width: 40em) {
 .no-decor {
   text-decoration: none;
   font-size: larger;
+}
+
+.no-pd {
+  padding-right: 0px !important;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+}
+
+.nav-link {
+  /* padding: 0px!important; */
+  display: block;
+  font-size: 17px !important;
+  font-weight: var(--bs-nav-link-font-weight);
+  text-align: center !important;
+  padding-top: 39px !important;
+}
+
+.chart-header {
+  /* position: absolute;   */
+  align-items: center !important;
+  text-align: center;
+  margin: auto;
+}
+
+.chart-header-in {
+  width: 894px;
+  height: 58px;
+  line-height: 144.7%;
+  color: #000000;
+  letter-spacing: 0.02em;
+  font-family: 'DM Sans' !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.container1 {
+  max-width: 2320px !important;
+}
+
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-pic {
+  display: inline;
+  /* margin: 0 auto; */
+  /* margin-left: -25%; */
+  height: 100%;
+  /* width: auto; */
+}
+
+.activities {
+  /* position: absolute; */
+  width: 109.82px;
+  height: 28.14px;
+  font-family: 'DM Sans' !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.voters-chart-text {
+  font-family: 'DM Sans' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 144.7%;
+  /* display: flex; */
+  letter-spacing: 0.02em;
+
+  color: #121212;
+}
+
+.my-10 {
+  margin-top: 200px!important;
 }

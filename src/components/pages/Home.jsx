@@ -11,20 +11,6 @@ function Home() {
     return (
         <div>
             <Slider />
-            {/* <section className="section">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 text-center">
-                            <h3 className="main-heading">Our Company</h3>
-                            <div className="underline mx-auto"></div>
-                            <p className='p1'>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                            <Link to="/about" className="btn btn-warning shadow"> Read More </Link>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
             {/* Our vision, mission and values */}
             {/* <VMC /> */}
 
@@ -39,7 +25,7 @@ function Home() {
                                 <p className="underline float-end"></p>
                             </div> */}
 
-                            <Link class="whatis__link" to="/services">Explore data across <strong>56 indicators</strong></Link> 2.3 million observations
+                            <Link class="whatis__link" to="/About">Explore data across <strong>56 indicators</strong></Link> 2.3 million observations
                             {/* <p>
                                 remaining essentially unchanged. It was popularised in the 1960s with the release.
                             </p>
@@ -51,7 +37,7 @@ function Home() {
                     <div className='card col-md-4 accelerated card2 shadow services-card'>
                         <div className='card-body'>
                             {/* <img src={Service2} className="w-100 border-bottom" alt='Services' /> */}
-                            <Link class="whatis__link" to="/services2">Browse data across <strong>23 sectors</strong></Link>
+                            <Link class="whatis__link" to="/Infographs">Browse data across <strong>23 sectors</strong></Link>
                             {/* <div>
                                 <h6>Services 2</h6>
                                 <p className="underline float-end"></p>
