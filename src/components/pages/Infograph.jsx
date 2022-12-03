@@ -1,33 +1,37 @@
 import React, { useState } from 'react';
-import VMC from './inc/Vmc';
-import { Link } from 'react-router-dom'
+// import VMC from './inc/Vmc';
+// import { Link } from 'react-router-dom'
 import { Line } from 'react-chartjs-2';
 import { Bar } from 'react-chartjs-2';
 import { Pie } from 'react-chartjs-2';
 
 // import { CDBContainer } from 'cdbreact';
-import Service4 from '../images/services4.jpg';
-import Service2 from '../images/services2.jpg';
-import Service5 from '../images/services5.jpg';
+// import Service4 from '../images/services4.jpg';
+// import Service2 from '../images/services2.jpg';
+// import Service5 from '../images/services5.jpg';
 
 
 function Infographs() {
     const [data] = useState({
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-        datasets: [
-            {
-                label: 'Series 1',
-                backgroundColor: 'rgba(194, 116, 161, 0.5)',
-                borderColor: 'rgb(194, 116, 161)',
-                data: [65, 59, 90, 81, 56, 55, 40, 59, 90, 81, 56, 55,],
-            },
-            {
-                label: 'Series 2',
-                backgroundColor: 'rgba(71, 225, 167, 0.5)',
-                borderColor: 'rgb(71, 225, 167)',
-                data: [28, 48, 40, 19, 56, 27, 35, 89, 31, 47, 77, 99],
-            },
-        ],
+        labels: [
+            'January',
+            'February',
+            'March',
+            'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
+          ],
+          datasets: [{
+            type: 'bar',
+            label: 'Bar Dataset',
+            data: [10, 20, 30, 40, 56, 55, 40, 59, 90, 81, 56, 55,],
+            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgba(255, 99, 132, 0.2)'
+          }, {
+            type: 'line',
+            label: 'Line Dataset',
+            data: [40, 26, 38, 50, 56, 27, 35, 89, 31, 47, 77, 99],
+            fill: false,
+            borderColor: 'rgb(54, 162, 235)'
+          }]
     });
 
     const [activities] = useState({

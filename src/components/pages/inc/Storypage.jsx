@@ -1,24 +1,58 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { MDBAccordion, MDBAccordionItem } from 'mdb-react-ui-kit';
+import { PieChart } from "./PieCharts";
 
-function StoryPage() {
+let data = [
+    ["Task", "Porcentaje"],
+    ["T2P%", 4],
+    ["T3P%", 3],
+    ["TL%", 1.5],
+    ["TO%", 1.5],
+    [null, 10]
+];
+
+export default function StoryPage() {
     return (
-        <div>
-            <section className="section">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 text-center">
-                            <h3 className="main-heading">Our Company</h3>
-                            <div className="underline mx-auto"></div>
-                            <p className='p1'>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                            <Link to="/about" className="btn btn-warning shadow"> Read More </Link>
+        <section>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="App">
+                            <h1>Hello CodeSandbox</h1>
+                            <h2>Start editing to see some magic happen!</h2>
+                            <PieChart language="es" data={data} />
                         </div>
                     </div>
+                    <div className="col-md-6">
+                        <MDBAccordion initialActive={1}>
+                            <MDBAccordionItem collapseId={1} headerTitle='Accordion Item #1'>
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </MDBAccordionItem>
+                            <MDBAccordionItem collapseId={2} headerTitle='Accordion Item #2'>
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </MDBAccordionItem>
+                            <MDBAccordionItem collapseId={3} headerTitle='Accordion Item #3'>
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </MDBAccordionItem>
+                        </MDBAccordion>
+                    </div>
                 </div>
-            </section>
-        </div>
-    )
+            </div>
+        </section>
+    );
 }
-export default StoryPage;
+
+
+

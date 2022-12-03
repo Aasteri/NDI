@@ -1,15 +1,13 @@
 import React from "react";
 import * as Icon from 'react-bootstrap-icons';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Footer() {
     return (
-        <footer class="text-white text-center text-lg-start footer-bg">
+        <footer class="pt-5 text-white text-center text-lg-start footer-bg">
             {/* <!-- Grid container --> */}
-            <div class="container p-4">
-                {/* <!--Grid row--> */}
+            {/* <div class="container p-4">
                 <div class="row mt-4">
-                    {/* <!--Grid column--> */}
                     <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
                         <h5 class="text-uppercase mb-4">About company</h5>
 
@@ -24,20 +22,13 @@ function Footer() {
                         </p>
 
                         <div class="mt-4">
-                            {/* <!-- Facebook --> */}
                             <a type="button" class="btn btn-floating btn-warning btn-circle btn-xl"><Icon.Facebook /></a>
-                            {/* <!-- Dribbble --> */}
                             <a type="button" class="btn btn-floating btn-warning btn-circle btn-xl"><Icon.Dribbble /></a>
-                            {/* <!-- Twitter --> */}
                             <a type="button" class="btn btn-floating btn-warning btn-circle btn-xl"><Icon.Twitter /></a>
-                            {/* <!-- Google + --> */}
                             <a type="button" class="btn btn-floating btn-warning btn-circle btn-xl"><Icon.Google /></a>
-                            {/* <!-- Linkedin --> */}
                         </div>
                     </div>
-                    {/* <!--Grid column--> */}
 
-                    {/* <!--Grid column--> */}
                     <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
 
@@ -65,9 +56,7 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    {/* <!--Grid column--> */}
 
-                    {/* <!--Grid column--> */}
                     <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase mb-4">Opening hours</h5>
 
@@ -88,16 +77,13 @@ function Footer() {
                             </tbody>
                         </table>
                     </div>
-                    {/* <!--Grid column--> */}
                 </div>
-                {/* <!--Grid row end--> */}
-            </div>
-            {/* <!-- Grid container end --> */}
+            </div> */}
 
             {/* <!-- Copyright --> */}
             <div class="text-center p-3 copyright-bg">
                 © 2022 Copyright:
-                <a class="text-white" href="https://aasteri.com/"> Aasteri.com</a>
+                <a class="text-white" href="https://ndi.org/"> National Democratic Institute</a> 
             </div>
             {/* <!-- Copyright --> */}
         </footer>

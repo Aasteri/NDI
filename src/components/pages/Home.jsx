@@ -1,11 +1,11 @@
 import React from 'react';
 import Slider from "../inc/Slider";
 import { Link } from 'react-router-dom';
-import VMC from "./inc/Vmc";
-import Service4 from '../images/services4.jpg';
-import Service2 from '../images/services2.jpg';
-import Service5 from '../images/services5.jpg';
-import Footer from '../inc/Footer';
+// import VMC from "./inc/Vmc";
+// import Service4 from '../images/services4.jpg';
+// import Service2 from '../images/services2.jpg';
+// import Service5 from '../images/services5.jpg';
+// import Footer from '../inc/Footer';
 
 function Home() {
     return (

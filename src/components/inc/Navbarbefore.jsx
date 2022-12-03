@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import logo from '../images/National_Democratic_Institute_main.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
-import { fab } from '@fortawesome/free-brands-svg-icons'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
 //   import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 

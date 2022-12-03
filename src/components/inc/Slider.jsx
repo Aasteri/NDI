@@ -1,8 +1,8 @@
 import React from 'react';
-import Slider0 from '../images/slider0.jpg';
-import Slider1 from '../images/slider1.jpg';
-import Slider2 from '../images/slider2.jpg';
-import Slider3 from '../images/slider3.jpg';
+// import Slider0 from '../images/slider0.jpg';
+// import Slider1 from '../images/slider1.jpg';
+// import Slider2 from '../images/slider2.jpg';
+// import Slider3 from '../images/slider3.jpg';
 import intelli from '../images/home-image.png';
 
 function Slider() {
