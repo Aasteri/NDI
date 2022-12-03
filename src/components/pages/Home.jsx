@@ -1,11 +1,11 @@
 import React from 'react';
 import Slider from "../inc/Slider";
 import { Link } from 'react-router-dom';
-// import VMC from "./inc/Vmc";
-// import Service4 from '../images/services4.jpg';
-// import Service2 from '../images/services2.jpg';
-// import Service5 from '../images/services5.jpg';
-// import Footer from '../inc/Footer';
+import VMC from "./inc/Vmc";
+import Service4 from '../images/services4.jpg';
+import Service2 from '../images/services2.jpg';
+import Service5 from '../images/services5.jpg';
+import Footer from '../inc/Footer';
 
 function Home() {
     return (
@@ -17,8 +17,8 @@ function Home() {
             {/* Our Services */}
             <section className='col-md-12'>
                 <div className="row">
-                    <div className='card accelerated col-md-4 card1 shadow'>
-                        <div className='card-body'>
+                    <div className='card card1 accelerated col-md-4 card1 shadow'>
+                        <div className='card-body card-body1'>
                             {/* <img src={Service4} className="w-100 border-bottom" alt='Services' /> */}
                             {/* <div>
                                 <h6>Services 1</h6>
@@ -34,8 +34,8 @@ function Home() {
                     </div>
 
 
-                    <div className='card col-md-4 accelerated card2 shadow services-card'>
-                        <div className='card-body'>
+                    <div className='card card1 col-md-4 accelerated card2 shadow services-card'>
+                        <div className='card-body card-body1'>
                             {/* <img src={Service2} className="w-100 border-bottom" alt='Services' /> */}
                             <Link class="whatis__link" to="/Infographs">Browse data across <strong>23 sectors</strong></Link>
                             {/* <div>
@@ -50,8 +50,8 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className='card col-md-4 accelerated card3 shadow'>
-                        <div className='card-body'>
+                    <div className='card card1 col-md-4 accelerated card3 shadow'>
+                        <div className='card-body card-body1'>
                             {/* <img src={Service5} className="w-100 border-bottom" alt='Services' /> */}
 
                             <Link class="whatis__link" to="/services3">Browse data across <strong>48 occupations</strong></Link>
@@ -65,8 +65,8 @@ function Home() {
                             <Link to="/services" className='btn btn-link'>Read More</Link> */}
                         </div>
                     </div>
-                    <div className='card accelerated col-md-4 card1 hover-zoom shadow'>
-                        <div className='card-body'>
+                    <div className='card card1 accelerated col-md-4 card1 hover-zoom shadow'>
+                        <div className='card-body card-body1'>
                             {/* <img src={Service4} className="w-100 border-bottom" alt='Services' /> */}
                             <Link class="whatis__link" to="/services4">Explore data for <strong>28 countries</strong></Link>
                             {/* <div>
@@ -81,8 +81,8 @@ function Home() {
                     </div>
 
 
-                    <div className='card col-md-4 accelerated card2 shadow services-card'>
-                        <div className='card-body'>
+                    <div className='card card1 col-md-4 accelerated card2 shadow services-card'>
+                        <div className='card-body card-body1'>
                             {/* <img src={Service2} className="w-100 border-bottom" alt='Services' /> */}
                             <Link class="whatis__link" to="/services5">Access the analysis of Cedefop’s <strong>online job advertisement</strong> data.</Link>
                             {/* <div>
@@ -97,8 +97,8 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className='card col-md-4 accelerated card3 shadow'>
-                        <div className='card-body'>
+                    <div className='card card1 col-md-4 accelerated card3 shadow'>
+                        <div className='card-body card-body1'>
                             {/* <img src={Service5} className="w-100 border-bottom" alt='Services' /> */}
                             <Link class="whatis__link" to="/services6">Read <strong>89</strong> curated <strong>data insights</strong></Link>
                             {/* <div>

@@ -32,8 +32,10 @@ class PieChart extends Component {
         {this.state.loaded ? (
           <div id="container">
             <Chart
-              width={this.state.width}
-              height={"400px"}
+            // maxWidth={'1000px'}
+              minWidth={this.state.width}
+              height={'450px'}
+              // minHeight={"400px"}
               chartType="PieChart"
               loader={<div>Loading Chart</div>}
               data={this.props.data}
@@ -51,7 +53,7 @@ class PieChart extends Component {
             />
           </div>
         ) : (
-          "Cargando datos"
+          "National Democratic Institute"
         )}
       </div>
     );

@@ -40,7 +40,7 @@ function Aboutus() {
                 borderColor: 'blue',
                 backgroundColor: 'yellow',
                 fill: false,
-                data: [0, 15, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120 ],
+                data: [0, 15, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120],
             },
             {
                 label: 'Series 4',
@@ -63,7 +63,7 @@ function Aboutus() {
                 data: [60, 50, 60, 80, 60, 40, 60],
                 fill: false,
                 borderColor: 'rgb(54, 162, 235)'
-            },{
+            }, {
                 label: 'Active',
                 backgroundColor: '#003488',
                 borderColor: 'rgb(194, 116, 161)',
@@ -113,6 +113,7 @@ function Aboutus() {
 
 
 
+
     // const [mixedChart] = useState({
     //     labels: ['January', 'February', 'March', 'April'],
     //     data: {
@@ -129,30 +130,6 @@ function Aboutus() {
     // });
     return (
         <div>
-            {/* <section className='py-4 bg-info'>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-4 my-auto">
-                            <h4>About Us</h4>
-                        </div>
-                        <div className="col-md-8 my-auto">
-                            <h6 className='float-end'>Home / About Us</h6>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="section border-bottom">
-                <div className="container">
-                    <h5 className='main-heading'>Our Company</h5>
-                    <div className="underline"></div>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                </div>
-            </section> */}
-            {/* Our vision, mission and values */}
-            {/* <VMC /> */}
-            {/* Our Services */}
             <section className="section border-top">
                 <div className="container">
                     <div className="row">
@@ -162,7 +139,7 @@ function Aboutus() {
                         </div>
                         <div className="col-md-12 ">
                             <div className='card shadow'>
-                                <div className="card-body">
+                                <div className="card-body card-body1">
                                     <div className="col-md-1 text-center">
                                         <div style={{ color: '#000' }}>hello</div>
                                     </div>
@@ -183,7 +160,7 @@ function Aboutus() {
 
                         <div className="my-5 col-md-6">
                             <div className='card shadow'>
-                                <div className="card-body">
+                                <div className="card-body card-body1">
                                     <h3 className="activities mt-5">Activities</h3>
                                     <Bar data={activities} options={{ responsive: true }} />
                                 </div>
@@ -191,7 +168,7 @@ function Aboutus() {
                         </div>
                         <div className="my-5 col-md-6">
                             <div className='card shadow'>
-                                <div className="card-body">
+                                <div className="card-body card-body1">
                                     <h3 className="activities mt-5">Activities</h3>
                                     <Pie data={pieset} options={{ responsive: true }} />
                                 </div>
@@ -205,7 +182,7 @@ function Aboutus() {
                         </div>
                         <div className="my-5 col-md-12">
                             <div className='card shadow'>
-                                <div className="card-body">
+                                <div className="card-body card-body1">
                                     <h3 className="activities mt-5">Activities</h3>
                                     <Radar data={radar} options={{ responsive: true }} />
                                 </div>
@@ -222,26 +199,19 @@ function Aboutus() {
                                 <div className="">hello</div>
                             </div>
                             <div className='card shadow'>
-                                <div className="card-body">
+                                <div className="card-body card-body1">
                                     <h3 className="activities mt-5">Activities</h3>
                                     <Polar data={radar} options={{ responsive: true }} />
                                 </div>
                             </div>
-                        </div>
+                        </div>                        
                         <div class="mb-5">
                             {/* <h1>Welcome</h1> */}
                             <p className='voters-chart-text'>
                                 Since Nigeria's 1999 transition from military to civilian rule, NDI has worked closely with Nigerian groups to support the development of the country's democratic institutions. Since 2011, NDI has supported citizen election observer groups to conduct parallel vote tabulations (PVTs) for two presidential and 19 gubernatorial elections. NDI’s PVT partners have also deployed pre-election observation reporting projects, marking the first time citizen observation groups have collected systematic data in the pre-election phase.
                             </p>
                         </div>
-                        {/* <div className="my-5 col-md-12">
-                            <div className='card shadow'>
-                                <div className="card-body">
-                                    <h3 className="activities mt-5">Activities</h3>
-                                    <BarChartLine data={mixedChart} options={{ responsive: true }} />
-                                </div>
-                            </div>
-                        </div> */}
+                        
                     </div>
                 </div>
             </section >

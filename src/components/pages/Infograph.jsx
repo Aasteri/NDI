@@ -4,133 +4,186 @@ import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
 import { Bar } from 'react-chartjs-2';
 import { Pie } from 'react-chartjs-2';
+import { MDBAccordion, MDBAccordionItem, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn, MDBRipple } from 'mdb-react-ui-kit';
+import PieChart from "./PieCharts";
+import { HorizontalBar } from 'react-chartjs-2';
+import { Chart } from "react-google-charts";
 
-// import { CDBContainer } from 'cdbreact';
-// import Service4 from '../images/services4.jpg';
-// import Service2 from '../images/services2.jpg';
-// import Service5 from '../images/services5.jpg';
 
 
+let data = [
+    ["Task", "Percentage"],
+    ["T2P%", 4],
+    ["T3P%", 3],
+    ["TL%", 1.5],
+    ["TO%", 1.5],
+    [null, 10]
+];
+const geodata = [
+    ["Country", "Popularity"],
+    ["Algeria", 36],
+  ["Angola", -8],
+  ["Benin", 6],
+  ["Botswana", -24],
+  ["Burkina Faso", 12],
+  ["Burundi", -3],
+  ["Cameroon", 3],
+  ["Canary Islands", 28],
+  ["Cape Verde", 15],
+  ["Central African Republic", 4],
+  ["Ceuta", 35],
+  ["Chad", 12],
+  ["Comoros", -12],
+  ["Cote d'Ivoire", 6],
+  ["Democratic Republic of the Congo", -3],
+  ["Djibouti", 12],
+  ["Egypt", 26],
+  ["Equatorial Guinea", 3],
+  ["Eritrea", 15],
+  ["Ethiopia", 9],
+  ["Gabon", 0],
+  ["Gambia", 13],
+  ["Ghana", 5],
+  ["Guinea", 10],
+  ["Guinea-Bissau", 12],
+  ["Kenya", -1],
+  ["Lesotho", -29],
+  ["Liberia", 6],
+  ["Libya", 32],
+  ["Madagascar", null],
+  ["Madeira", 33],
+  ["Malawi", -14],
+  ["Mali", 12],
+  ["Mauritania", 18],
+  ["Mauritius", -20],
+  ["Mayotte", -13],
+  ["Melilla", 35],
+  ["Morocco", 32],
+  ["Mozambique", -25],
+  ["Namibia", -22],
+  ["Niger", 14],
+  ["Nigeria", 8],
+  ["Republic of the Congo", -1],
+  ["Réunion", -21],
+  ["Rwanda", -2],
+  ["Saint Helena", -16],
+  ["São Tomé and Principe", 0],
+  ["Senegal", 15],
+  ["Seychelles", -5],
+  ["Sierra Leone", 8],
+  ["Somalia", 2],
+  ["Sudan", 15],
+  ["South Africa", -30],
+  ["South Sudan", 5],
+  ["Swaziland", -26],
+  ["Tanzania", -6],
+  ["Togo", 6],
+  ["Tunisia", 34],
+  ["Uganda", 1],
+  ["Western Sahara", 25],
+  ["Zambia", -15],
+  ["Zimbabwe", -18],
+  ["Nigeria", 13],
+    
+];
+export const options = {
+    region: "002", // Nigeria
+    colorAxis: { colors: ["#00853f", "black", "#e31b23", "green"] },
+    // backgroundColor: "#81d4fa",
+    // datalessRegionColor: "#f8bbd0",
+    defaultColor: "#f5f5f5",
+  };
 function Infographs() {
-    const [data] = useState({
-        labels: [
-            'January',
-            'February',
-            'March',
-            'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
-          ],
-          datasets: [{
-            type: 'bar',
-            label: 'Bar Dataset',
-            data: [10, 20, 30, 40, 56, 55, 40, 59, 90, 81, 56, 55,],
-            borderColor: 'rgb(255, 99, 132)',
-            backgroundColor: 'rgba(255, 99, 132, 0.2)'
-          }, {
-            type: 'line',
-            label: 'Line Dataset',
-            data: [40, 26, 38, 50, 56, 27, 35, 89, 31, 47, 77, 99],
-            fill: false,
-            borderColor: 'rgb(54, 162, 235)'
-          }]
-    });
-
-    const [activities] = useState({
-        labels: ['Yr 1', 'Yr 2', 'Yr 3', 'Yr 4', 'Yr 5', 'Yr 6', 'Yr 7'],
-        datasets: [
-            {
-                label: 'Active',
-                backgroundColor: 'rgba(194, 116, 161, 0.5)',
-                borderColor: 'rgb(194, 116, 161)',
-                data: [65, 59, 90, 81, 56, 55, 40],
-                borderRadius: 20,
-            },
-        ],
-    });
-
-
-    const [pieset] = useState({
-        labels: ['10%', '20%', '30%', '40%', '50%', '60%', '70%', '80%', '90%', '100%'],
+    const [horizontalBar] = useState({
+        labels: ['Male', 'Female', 'Under Age', 'Young Adults', 'Adults', 'Aged', 'Unavaillable'],
         datasets: [
             {
                 label: 'My First dataset',
-                backgroundColor: 'rgba(52, 179, 241, 0.37)',
-                borderColor: 'rgb(194, 116, 161)',
-                data: [30, 50, 70, 40, 19, 96, 27, 80],
-                transform: 'rotate(-60.25deg)',
+                backgroundColor: 'red',
+                borderColor: 'blue',
+                data: [70, 60, 50, 40, 30, 20, 10],
             },
             {
                 label: 'My Second dataset',
-                backgroundColor: 'rgba(71, 225, 167, 0.5)',
-                borderColor: 'rgb(71, 225, 167)',
-                data: [28, 48, 40, 19, 96, 27, 100],
+                backgroundColor: 'blue',
+                borderColor: 'blue',
+                data: [68, 58, 48, 38, 28, 18, 8],
             },
         ],
     });
-
     return (
-        <div>
-            {/* <section className='py-4 bg-info'>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-4 my-auto">
-                            <h4>About Us</h4>
-                        </div>
-                        <div className="col-md-8 my-auto">
-                            <h6 className='float-end'>Home / About Us</h6>
+        <section className="section border-top">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="App">
+                            {/* <div className="text-center">
+                            <h3>Nigeria — 2023 presidential election</h3>
+                        </div> */}
+                            <PieChart language="es" data={data} />
                         </div>
                     </div>
-                </div>
-            </section>
-            <section className="section border-bottom">
-                <div className="container">
-                    <h5 className='main-heading'>Our Company</h5>
-                    <div className="underline"></div>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                </div>
-            </section> */}
-            {/* Our vision, mission and values */}
-            {/* <VMC /> */}
-            {/* Our Services */}
-            <section className="section border-top">
-                <div className="container">
+                    <div className="col-md-6">
+                        <MDBAccordion initialActive={1}>
+                            <MDBAccordionItem collapseId={1} headerTitle='Accordion Item #1'>
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </MDBAccordionItem>
+                            <MDBAccordionItem collapseId={2} headerTitle='Accordion Item #2'>
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </MDBAccordionItem>
+                            <MDBAccordionItem collapseId={3} headerTitle='Accordion Item #3'>
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </MDBAccordionItem>
+                        </MDBAccordion>
+                    </div>
+
                     <div className="row">
-                        <div className="col-md-12 mb-4 chart-header">
-                            <h3 className="chart-header-in">Nigeria - Voters Progression for 2023 election</h3>
-                            <div className="underline mx-auto"></div>
+                        <div className="mb-3">
+                            <h2>Elections in Nigeria — Latest news</h2>
+                            <div className='underline'></div>
                         </div>
-                        <div className="col-md-12 ">
-                            <div className=''>
-                                <div className="">
-                                    <h3 className="activities mt-5">Voters Activities</h3>
-                                    <Line data={data} options={{ responsive: true }} />
+                    </div>
+
+                    <div className="col-md-6">
+                        <div className='card shadow'>
+                            <div className="card-body card-body1">
+                                <h3 className="activities mt-5">Activities</h3>
+                                <HorizontalBar data={horizontalBar} options={{ responsive: true }} />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-6">
+                        <div className='card shadow'>
+                            <div className="card-body card-body1">
+                                <h3 className="activities mt-5">Activities</h3>
+                                <HorizontalBar data={horizontalBar} options={{ responsive: true }} />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-12 my-5 py-5">
+                        <div className='card shadow'>
+                            <div className="card-body card-body1">
+                                <div className="App">
+                                    <Chart chartType="GeoChart" width="100%" height="400px" data={geodata} options={options}/>
                                 </div>
                             </div>
                         </div>
-                        <div class="mb-5 my-10">
-                            {/* <h1>Welcome</h1> */}
-                            <p className='voters-chart-text'>
-                                Since Nigeria's 1999 transition from military to civilian rule, NDI has worked closely with Nigerian groups to support the development of the country's democratic institutions. Since 2011, NDI has supported citizen election observer groups to conduct parallel vote tabulations (PVTs) for two presidential and 19 gubernatorial elections. NDI’s PVT partners have also deployed pre-election observation reporting projects, marking the first time citizen observation groups have collected systematic data in the pre-election phase.
-                            </p>
-                        </div>
-
-                        <div className="col-md-6">
-                            <div className=''>
-                                <h3 className="activities mt-5">Activities</h3>
-                                <Bar data={activities} options={{ responsive: true }} />
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className=''>
-                                <h3 className="activities mt-5">Activities</h3>
-                                <Pie data={pieset} options={{ responsive: true }} />
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </section >
-        </div >
+            </div>
+        </section >
     )
 }
 export default Infographs;
