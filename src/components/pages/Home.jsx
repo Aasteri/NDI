@@ -54,7 +54,7 @@ function Home() {
                         <div className='card-body card-body1'>
                             {/* <img src={Service5} className="w-100 border-bottom" alt='Services' /> */}
 
-                            <Link class="whatis__link" to="/services3">Browse data across <strong>48 occupations</strong></Link>
+                            <Link class="whatis__link" to="/story">Browse data across <strong>48 occupations</strong></Link>
                             {/* <div>
                                 <h6>Services 3</h6>
                                 <p className="underline float-end"></p>
@@ -68,7 +68,7 @@ function Home() {
                     <div className='card card1 accelerated col-md-4 card1 hover-zoom shadow'>
                         <div className='card-body card-body1'>
                             {/* <img src={Service4} className="w-100 border-bottom" alt='Services' /> */}
-                            <Link class="whatis__link" to="/services4">Explore data for <strong>28 countries</strong></Link>
+                            <Link class="whatis__link" to="/contact">Explore data for <strong>28 countries</strong></Link>
                             {/* <div>
                                 <h6>Services 1</h6>
                                 <p className="underline float-end"></p>
@@ -84,7 +84,7 @@ function Home() {
                     <div className='card card1 col-md-4 accelerated card2 shadow services-card'>
                         <div className='card-body card-body1'>
                             {/* <img src={Service2} className="w-100 border-bottom" alt='Services' /> */}
-                            <Link class="whatis__link" to="/services5">Access the analysis of Cedefop’s <strong>online job advertisement</strong> data.</Link>
+                            <Link class="whatis__link" to="/contact">Access the analysis of Cedefop’s <strong>online job advertisement</strong> data.</Link>
                             {/* <div>
                                 <h6>Services 2</h6>
                                 <p className="underline float-end"></p>
@@ -100,7 +100,7 @@ function Home() {
                     <div className='card card1 col-md-4 accelerated card3 shadow'>
                         <div className='card-body card-body1'>
                             {/* <img src={Service5} className="w-100 border-bottom" alt='Services' /> */}
-                            <Link class="whatis__link" to="/services6">Read <strong>89</strong> curated <strong>data insights</strong></Link>
+                            <Link class="whatis__link" to="/Infographs">Read <strong>89</strong> curated <strong>data insights</strong></Link>
                             {/* <div>
                                 <h6>Services 3</h6>
                                 <p className="underline float-end"></p>
